@@ -34,13 +34,8 @@ deploy:
   script:
     - npm -g config set user root
     - npm i -g  firebase-tools
-    - firebase -V
     - yarn
     - yarn run build
-    - echo $FIREBASE_DEPLOY_NAME
-    - echo $FIREBASE_DEPLOY_KEY
-    - echo $CI_PIPELINE_ID
-    - echo $CI_BUILD_ID
     - firebase use $FIREBASE_DEPLOY_NAME --token $FIREBASE_DEPLOY_KEY
     - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_DEPLOY_KEY
   only:
