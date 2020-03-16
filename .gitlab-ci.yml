@@ -3,11 +3,11 @@ stages:
   - test
   - deploy
 
+image: node:13.10.1-stretch
+
 cache:
   paths:
     - node_modules/
-
-image: node:13.10.1-stretch
 
 build:
   stage: build
