@@ -12,6 +12,7 @@ cache:
 build:
   stage: build
   script:
+    - yarn
     - yarn build
   artifacts:
     paths:
