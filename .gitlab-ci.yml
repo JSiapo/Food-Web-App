@@ -25,11 +25,15 @@ test:
   stage: test
   script:
     - yarn test
+  only:
+    - develop
 
 deploy:
   stage: deploy
   environment: Production
   script:
+    - npm install -g firebase-tools
+    - firebase -V
     - yarn
     - yarn run build
     - firebase use $FIREBASE_DEPLOY_NAME --token $FIREBASE_DEPLOY_KEY
