@@ -1,0 +1,33 @@
+stages:
+  - build
+  - test
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+image: node:13.10.1-stretch
+
+build:
+  stage: build
+  script:
+    - yarn build
+  artifacts:
+    paths:
+      - node_modules/
+      - build/
+  only:
+    - develop
+
+test:
+  stage: test
+  script:
+    - yarn test
+
+deploy:
+  stage: deploy
+  script:
+    - yarn deploy
+  only:
+    - master
