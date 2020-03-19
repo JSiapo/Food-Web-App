@@ -13,11 +13,7 @@
 
 ---
 
-<center>
-
-![image](./public/cafeteria256.png)
-
-</center>
+<img src="./public/cafeteria256.png" alt="Logo" style="display: block; margin: 0 auto" />
 
 Visit **deploy** application [here](https://foodwebhome.web.app)
 
