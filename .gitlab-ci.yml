@@ -18,15 +18,11 @@ build:
     paths:
       - node_modules/
       - build/
-  only:
-    - develop
 
 test:
   stage: test
   script:
     - yarn test
-  only:
-    - develop
 
 deploy:
   stage: deploy
