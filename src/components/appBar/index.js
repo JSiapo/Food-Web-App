@@ -1,3 +1,3 @@
-import AppBar from 'components/appBar/appBarComponent';
+import AppBarContainer from 'components/appBar/appBarContainer';
 
-export default AppBar;
+export default AppBarContainer;

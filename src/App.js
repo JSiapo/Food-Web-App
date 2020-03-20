@@ -1,10 +1,10 @@
 import React from 'react';
-import AppBar from 'components/appBar';
+import AppBarContainer from 'components/appBar';
 
 function App() {
   return (
     <React.Fragment>
-      <AppBar usuario={''}></AppBar>
+      <AppBarContainer usuario={'José'} />
     </React.Fragment>
   );
 }
