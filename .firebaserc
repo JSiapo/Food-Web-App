@@ -1,5 +1,21 @@
 {
   "projects": {
     "default": "foodwebhome"
+  },
+  "targets": {
+    "foodwebhome": {
+      "hosting": {
+        "dev": [
+          "dev-foodwebapp"
+        ]
+      }
+    },
+    "dev-foodwebapp": {
+      "hosting": {
+        "appbar": [
+          "food-web-appbar"
+        ]
+      }
+    }
   }
 }
