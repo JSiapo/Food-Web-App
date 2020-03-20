@@ -9,10 +9,10 @@ Object {
   "baseElement": <body>
     <div>
       <div>
-        <p>
-          Hello 
+        <h1>
+          Hello, 
           <span />
-        </p>
+        </h1>
         <div>
           <button
             class="btn-date"
@@ -80,10 +80,10 @@ Object {
   </body>,
   "container": <div>
     <div>
-      <p>
-        Hello 
+      <h1>
+        Hello, 
         <span />
-      </p>
+      </h1>
       <div>
         <button
           class="btn-date"
@@ -208,10 +208,10 @@ Object {
   "baseElement": <body>
     <div>
       <div>
-        <p>
-          Hello 
+        <h1>
+          Hello, 
           <span />
-        </p>
+        </h1>
         <div>
           <button
             class="btn-date"
@@ -279,10 +279,10 @@ Object {
   </body>,
   "container": <div>
     <div>
-      <p>
-        Hello 
+      <h1>
+        Hello, 
         <span />
-      </p>
+      </h1>
       <div>
         <button
           class="btn-date"
