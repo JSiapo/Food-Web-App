@@ -1,14 +1,9 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import AppBar from 'components/appBar';
+// import { render } from '@testing-library/react';
+import AppBarContainer from 'components/appBar';
+import renderer from 'react-test-renderer';
 
-describe('appBar component', () => {
-  it('should compare welcome message', () => {
-    const appBar = render(<AppBar usuario='' />);
-    expect(appBar).toMatchSnapshot();
-  });
-  it('should compare today', () => {
-    const appBar = render(<AppBar usuario='' />);
-    expect(appBar).toMatchSnapshot();
-  });
+it('should compare structure message', () => {
+  const appBar = renderer.create(<AppBarContainer usuario={'José'} />);
+  expect(appBar.toJSON).toMatchSnapshot();
 });
