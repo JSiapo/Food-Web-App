@@ -20,14 +20,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "react-scripts build && firebase deploy",
-    "lint": "eslint ./ --cache --ignore-pattern .gitignore",
-    "lint:fix": "eslint ./ --cache --ignore-pattern .gitignore --fix",
+    "lint": "eslint ./src --cache --ignore-pattern .gitignore",
+    "lint:fix": "eslint ./src --cache --ignore-pattern .gitignore --fix",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "pre-commit": [
     "precommit-msg",
-    "lint",
-    "test"
+    "lint"
   ],
   "eslintConfig": {
     "extends": "react-app"
