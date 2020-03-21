@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-function ButtonBar({ dayMonth, dayName }) {
+const ButtonBar = ({ dayMonth, dayName }) => {
   return (
     <Fragment>
       <button
@@ -16,7 +16,7 @@ function ButtonBar({ dayMonth, dayName }) {
       </button>
     </Fragment>
   );
-}
+};
 
 ButtonBar.propTypes = {
   dayName: PropTypes.string.isRequired,

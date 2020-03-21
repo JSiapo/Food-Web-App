@@ -2,7 +2,7 @@ import React from 'react';
 import { daysObject } from 'utils/dateUtil';
 import ButtonBar from 'components/appBar/buttonNav/ButtonBarComponent';
 
-export default function NavigatorButtons() {
+const NavigatorButtons = () => {
   return (
     <div>
       {daysObject.daysName.map((dayName, ind) => {
@@ -16,4 +16,6 @@ export default function NavigatorButtons() {
       })}
     </div>
   );
-}
+};
+
+export default NavigatorButtons;
