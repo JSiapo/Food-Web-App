@@ -1,9 +1,10 @@
 import React from 'react';
+import AppBarContainer from 'components/appBar';
 
 function App() {
   return (
     <React.Fragment>
-    <h1>Hello world</h1>
+      <AppBarContainer usuario={'José'} />
     </React.Fragment>
   );
 }

@@ -1,0 +1,9 @@
+.date-month {
+  display: block;
+  padding: 0.5em;
+}
+
+.btn-date {
+  padding-left: 0.5em;
+  margin: 0.5em;
+}
