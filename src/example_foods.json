@@ -1,0 +1,35 @@
+[
+  {
+    "id": 4,
+    "fecha": "04-03-2020",
+    "state": true,
+    "food": {
+      "id": 1,
+      "options": "Ají de Gallina",
+      "state": true,
+      "image": "https://t2.rg.ltmcdn.com/es/images/3/8/7/img_aji_de_pollo_16783_orig.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "fecha": "04-03-2020",
+    "state": false,
+    "food": {
+      "id": 2,
+      "options": "Lomo Saltado",
+      "state": true,
+      "image": "https://comidaperuana.life/wp-content/uploads/2018/05/lomo-saltado-de-carne_700x467.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "fecha": "04-03-2020",
+    "state": false,
+    "food": {
+      "id": 1,
+      "options": "Ají de Gallina",
+      "state": true,
+      "image": "https://t2.rg.ltmcdn.com/es/images/3/8/7/img_aji_de_pollo_16783_orig.jpg"
+    }
+  }
+]
