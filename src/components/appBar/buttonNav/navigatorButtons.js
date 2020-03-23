@@ -2,13 +2,13 @@ import React from 'react';
 import { daysObject } from 'utils/dateUtil';
 import ButtonBar from 'components/appBar/buttonNav/ButtonBarComponent';
 
-export default function NavigatorButtons() {
+const NavigatorButtons = () => {
   return (
     <div>
       {daysObject.daysName.map((dayName, ind) => {
         return (
           <ButtonBar
-            key={ind}
+            key={daysObject.dayId[ind]}
             dayName={dayName}
             dayMonth={daysObject.daysMonth[ind]}
           />
@@ -16,4 +16,6 @@ export default function NavigatorButtons() {
       })}
     </div>
   );
-}
+};
+
+export default NavigatorButtons;

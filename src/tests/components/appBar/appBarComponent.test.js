@@ -1,18 +1,8 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import AppBar from 'components/appBar';
-import { daysObject } from 'utils/dateUtil';
+import AppBarContainer from 'components/appBar';
+import renderer from 'react-test-renderer';
 
-describe('appBar component', () => {
-  it('should compare welcome message', () => {
-    const appBar = render(<AppBar usuario='' />);
-    expect(appBar).toMatchSnapshot('Hello ');
-  });
-  it('should compare today', () => {
-    const appBar = render(<AppBar usuario='' />);
-    expect(appBar).toMatchSnapshot(`
-    ${daysObject.daysName[0]}
-    ${daysObject.daysMonth[0]}
-    `);
-  });
+it('should compare structure message from AppBar', () => {
+  const appBar = renderer.create(<AppBarContainer username={''} />);
+  expect(appBar.toJSON).toMatchSnapshot();
 });
