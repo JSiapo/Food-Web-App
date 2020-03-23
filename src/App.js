@@ -4,7 +4,7 @@ import AppBarContainer from 'components/appBar';
 const App = () => {
   return (
     <React.Fragment>
-      <AppBarContainer usuario={'José'} />
+      <AppBarContainer username={'José'} />
     </React.Fragment>
   );
 };

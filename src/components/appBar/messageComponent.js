@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const MessageComponent = ({ usuario }) => {
+const MessageComponent = ({ username }) => {
   return (
     <h1>
-      Hello, <span>{usuario}</span>
+      Hello, <span>{username}</span>
     </h1>
   );
 };
 
 MessageComponent.propTypes = {
-  usuario: PropTypes.string.isRequired
+  username: PropTypes.string.isRequired
 };
 
 export default MessageComponent;

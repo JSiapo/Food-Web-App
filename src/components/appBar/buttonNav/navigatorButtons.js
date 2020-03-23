@@ -8,7 +8,7 @@ const NavigatorButtons = () => {
       {daysObject.daysName.map((dayName, ind) => {
         return (
           <ButtonBar
-            key={ind}
+            key={daysObject.dayId[ind]}
             dayName={dayName}
             dayMonth={daysObject.daysMonth[ind]}
           />

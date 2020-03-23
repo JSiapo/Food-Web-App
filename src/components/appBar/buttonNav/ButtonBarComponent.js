@@ -1,18 +1,24 @@
 //Style silver app in Flutter 📱
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import './style.css';
+import style from 'components/appBar/buttonNav/buttonNav.module.css';
+
+/**
+ * Componente Botón con fecha y día e.g. LUN 18
+ * @param {dayMonth} String Día del mes e.g. 18
+ * @param {dayName} String Nombre del día e.g. LUN (referencia a Lunes)
+ */
 
 const ButtonBar = ({ dayMonth, dayName }) => {
   return (
     <Fragment>
       <button
-        className={'btn-date'}
+        className={[style['btn-date']]}
         onClick={() => {
           console.log(dayName);
         }}>
         {dayName}
-        <span className={'date-month'}>{dayMonth}</span>
+        <span className={style['date-month']}>{dayMonth}</span>
       </button>
     </Fragment>
   );

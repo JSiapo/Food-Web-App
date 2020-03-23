@@ -3,17 +3,22 @@ import PropTypes from 'prop-types';
 import NavigatorButtons from 'components/appBar/buttonNav/navigatorButtons';
 import MessageComponent from 'components/appBar/messageComponent';
 
-const AppBarContainer = ({ usuario }) => {
+/**
+ *
+ * @param {username} Object contendrá la info del usuario
+ */
+
+const AppBarContainer = ({ username }) => {
   return (
     <div>
-      <MessageComponent usuario={usuario} />
+      <MessageComponent username={username} />
       <NavigatorButtons />
     </div>
   );
 };
 
 AppBarContainer.propTypes = {
-  usuario: PropTypes.string.isRequired
+  username: PropTypes.string.isRequired
 };
 
 export default AppBarContainer;
